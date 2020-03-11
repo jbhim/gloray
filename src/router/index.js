@@ -5,6 +5,10 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    redirect: '/pc'
+  },
+  {
     path: '/pc',
     name: 'Pc',
     component: () => import(/* webpackChunkName: "about" */ '../views/pc/Index.vue')
